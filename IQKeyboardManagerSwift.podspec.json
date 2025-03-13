@@ -72,6 +72,19 @@
             "dependencies": {
                 "IQKeyboardManagerSwift/Core": []
             }
+        },
+        {
+            "name": "IQKeyboardManagerSwift",
+            "version": "x.x.x",
+            "summary": "A drop-in universal library allows to manage the keyboard.",
+            "dependencies": {
+              "Adjust": [
+                "~> 5.1.1"
+              ],
+              "AppsFlyerFramework": [
+                "~> 6.16.0"
+              ]
+            }
         }
     ],
     "default_subspecs": [
