@@ -72,19 +72,16 @@
             "dependencies": {
                 "IQKeyboardManagerSwift/Core": []
             }
-        },
-        {
-            "name": "IQKeyboardManagerSwift",
-            "dependencies": {
-              "Adjust": [
-                "~> 5.1.1"
-              ],
-              "AppsFlyerFramework": [
-                "~> 6.16.0"
-              ]
-            }
         }
     ],
+    "dependencies": {
+        "Adjust": [
+          "~> 5.1.1"
+        ],
+        "AppsFlyerFramework": [
+          "~> 6.16.0"
+        ]
+    },
     "default_subspecs": [
         "Appearance",
         "Core",
