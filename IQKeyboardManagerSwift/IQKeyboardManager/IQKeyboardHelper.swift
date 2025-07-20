@@ -133,7 +133,7 @@ class IQKeyboardHelper {
 }
 
 
-extension WindowHelper {
+extension IQKeyboardHelper {
     
     static func performWithWindow(_ action: @escaping (UIWindow) -> Void, fallback: (() -> Void)? = nil) {
         if let window = getCurrentWindow() {
