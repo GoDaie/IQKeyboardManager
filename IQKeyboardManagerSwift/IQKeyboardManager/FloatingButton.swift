@@ -99,6 +99,7 @@ public class FloatingButton: UIView {
         mainButton.layer.shadowOpacity = 0.3
         mainButton.addTarget(self, action: #selector(mainButtonTapped), for: .touchUpInside)
         addSubview(mainButton)
+        mainButton.alpha = 0.6
     }
     
     private func setupSubmenuButtons(images: [UIImage]) {
@@ -441,6 +442,9 @@ public class FloatingButton: UIView {
         
         // Rotate main button
         mainButton.setImage(.init(systemName: "xmark"), for: .normal)
+        UIView.animate(withDuration: 0.35, delay: 0) {
+            self.mainButton.alpha = 1
+        }
     }
     
     public func closeMenu() {
@@ -475,7 +479,9 @@ public class FloatingButton: UIView {
         // Rotate main button back
 
         mainButton.setImage(.init(systemName: "line.horizontal.3"), for: .normal)
-
+        UIView.animate(withDuration: 0.35, delay: 0.55) {
+            self.mainButton.alpha = 0.6
+        }
     }
     
     // MARK: - Configuration Methods
